@@ -2,7 +2,7 @@ import SwiftUI
 
 public struct BubbleTabBar: View {
     
-    @State private var selectedTab: UUID?
+    @State private var selectedTab: TabItem.ID?
     private let tabs: [TabItem]
     private let colorSchema: AnyShapeStyle
     private let horizontalPadding: CGFloat

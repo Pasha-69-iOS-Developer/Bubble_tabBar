@@ -1,18 +1,20 @@
 import SwiftUI
 
 public struct TabItem: Identifiable, Hashable {
-    public let id = UUID()
+    public let id: String
     public let icon: String
     public let title: String
     public let selectedColor: Color
     public let view: AnyView
     
     public init<V: View>(
+        id: String = "",
         icon: String,
         title: String,
-        color: Color = .blue,
+        color: Color,
         @ViewBuilder view: () -> V
     ) {
+        self.id = "\(title)"
         self.icon = icon
         self.title = title
         self.selectedColor = color

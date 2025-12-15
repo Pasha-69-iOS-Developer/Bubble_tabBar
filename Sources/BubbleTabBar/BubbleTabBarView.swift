@@ -4,10 +4,10 @@ import SwiftUI
 
 
 public struct BubbleTabBarView: View {
-    @Binding public var selectedTab: UUID?
+    @Binding public var selectedTab: TabItem.ID?
     public let tabs: [TabItem]
     
-    public init(selectedTab: Binding<UUID?>, tabs: [TabItem]) {
+    public init(selectedTab: Binding<TabItem.ID?>, tabs: [TabItem]) {
         self._selectedTab = selectedTab
         self.tabs = tabs
     }
