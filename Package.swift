@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "BubbleTabBar",
     platforms: [
-        .iOS(.v17), // Минимальная версия iOS 17
+        .iOS(.v17),
         .macCatalyst(.v17),
         .visionOS(.v1)
     ],
