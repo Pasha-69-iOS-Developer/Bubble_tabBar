@@ -1,6 +1,6 @@
 # Bubble TabBar (SwiftUI)
 
-<img src=https://github.com/user-attachments/assets/85eaefc4-558e-4e67-802a-257c355db55a width='250' height='250'>
+<img src=https://github.com/user-attachments/assets/85eaefc4-558e-4e67-802a-257c355db55a width='150' height='150'>
 
 [![Build Status](https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS%20%7C%20macOS%20%7C%20watchOS-green.svg)](https://github.com/Jinxiansen/SwiftUI)
 [![Swift](https://img.shields.io/badge/Swift-5.7-orange.svg)](https://swift.org)
@@ -11,6 +11,8 @@
 ------------
 ## Introduction
 This is custom TabBar for SwiftUI with Bubble selection animation and easy implementation works with +17 iOS
+
+<img src=https://github.com/user-attachments/assets/a5edfb14-c557-48aa-bbed-115cd2d9ed12 width='200' height='500'>
 
 ### Requirements
 - iOS 17.0+ 
