@@ -14,9 +14,7 @@ let package = Package(
             name: "BubbleTabBar",
             targets: ["BubbleTabBar"]),
     ],
-    dependencies: [
-        .package(url: "https://https://github.com/Pasha-69-iOS-Developer/Bubble_tabBar", .upToNextMajor(from: "1.0.0"))
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "BubbleTabBar",
