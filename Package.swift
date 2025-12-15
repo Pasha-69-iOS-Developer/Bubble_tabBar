@@ -7,15 +7,16 @@ let package = Package(
     name: "BubbleTabBar",
     platforms: [
         .iOS(.v17),
-        .macCatalyst(.v17),
-        .visionOS(.v1)
+        .macCatalyst(.v17)
     ],
     products: [
         .library(
             name: "BubbleTabBar",
             targets: ["BubbleTabBar"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://https://github.com/Pasha-69-iOS-Developer/Bubble_tabBar", .upToNextMajor(from: "1.0.0"))
+    ],
     targets: [
         .target(
             name: "BubbleTabBar",
