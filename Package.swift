@@ -14,7 +14,9 @@ let package = Package(
             name: "BubbleTabBar",
             targets: ["BubbleTabBar"]),
     ],
-    dependencies: [],
+    dependencies: [
+        
+    ],
     targets: [
         .target(
             name: "BubbleTabBar",

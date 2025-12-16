@@ -4,14 +4,14 @@ public struct BubbleTabBar: View {
     
     @State private var selectedTab: TabItem.ID?
     private let tabs: [TabItem]
-    private let colorSchema: AnyShapeStyle
+    private let colorSchema: tabBarColorSchema
     private let horizontalPadding: CGFloat
     private let bottomPadding: CGFloat
     private let verticalPadding: CGFloat
     
     public init(
         tabs: [TabItem],
-        colorSchema: AnyShapeStyle = AnyShapeStyle(.ultraThinMaterial),
+        colorSchema: tabBarColorSchema = tabBarColorSchema.material(.ultraThinMaterial),
         horizontalPadding: CGFloat = 15,
         bottomPadding: CGFloat = 10,
         verticalPadding: CGFloat = 16
@@ -42,7 +42,7 @@ public struct BubbleTabBar: View {
                 .padding(.vertical, verticalPadding)
                 .background(
                     Capsule()
-                        .fill(colorSchema)
+                        .fill(colorSchema.value)
                         .overlay(
                             Capsule()
                                 .stroke(Color.gray.opacity(0.3), lineWidth: 2)
@@ -56,6 +56,23 @@ public struct BubbleTabBar: View {
             .padding(.bottom, bottomPadding)
         }
         .ignoresSafeArea()
+    }
+}
+
+extension BubbleTabBar {
+    
+    public enum tabBarColorSchema {
+        case color(Color)
+        case material(Material)
+        
+        var value: AnyShapeStyle {
+            switch self {
+            case .color(let color):
+                return AnyShapeStyle(color)
+            case .material(let material):
+                return AnyShapeStyle(material)
+            }
+        }
     }
 }
 
