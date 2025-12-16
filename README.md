@@ -59,5 +59,22 @@ dependencies: [
             tabs: tabs
         )
 
-
 ```
+
+## How to setting up tabBar View
+
+```swift
+    var body: some Scene {
+        WindowGroup {
+            BubbleTabBar(
+                tabs: tabs,
+                colorSchema: <#T##BubbleTabBar.tabBarColorSchema#>,
+                horizontalPadding: <#T##CGFloat#>,
+                bottomPadding: <#T##CGFloat#>,
+                verticalPadding: <#T##CGFloat#>
+            )
+        }
+    }
+```
+
+<img width="600" height="400" alt="Group@3x" src="https://github.com/user-attachments/assets/368bf4fe-2f37-4f67-aca2-65c514163ccb" />
